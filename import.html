@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title></title>
+  <style>
+    :root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+body {
+  display: grid;
+  font-size: 15px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  background-color: rgba(41, 61, 90, 0.99);
+
+}
+.box p {
+  color: #753BBD;
+  opacity: 0;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0 0 1.25em;
+  transform: translateY(-1em);
+  transition: opacity .45s ease, transform .5s ease;
+}
+
+.box {
+  border-radius: 5px;
+  padding: 30px;
+  padding-bottom: 40px;
+  margin: 20px;  
+  text-decoration: none;
+  border: 2px solid rgb(100, 255, 218);
+  text-align: center;
+  justify-content: center;
+}
+
+
+h2 {
+  color: rgb(100, 255, 218); 
+  font-weight: var(--weight3);
+ 
+}
+
+/* css for upper cards */
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+  } 
+.box {
+      width: 200px ;
+      height: 62px;
+ }
+
+
+a:hover {
+    margin-top:0px;
+    transition: 0.6s all ease-in-out;
+    background-color: rgb(100, 255, 218);
+    
+}
+.box:hover h2 {
+  color:rgba(41, 61, 90, 0.99);
+}
+.box:hover p {
+  color: aliceblue;
+  opacity: 1;
+  transform: none;
+  
+}
+
+  </style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+  <div class="container">
+    <a href="description.html"class="box box-down cyan">
+      <h2>DATA DESCRIPTION</h2>
+      
+    </a>
+    
+    <a class="box box-down red">
+      <h2>Task Missing</h2>
+      
+    </a>
+    <a class="box box-down blue">
+      <h2>Handle categories</h2>
+     
+     
+    </a>
+    <a class="box box-down orange">
+      <h2>Feature Scaling</h2>
+        
+    </a>
+  </div>
+<!-- //--------------------- -->
+  <div class="container">
+    <a  class="box box-down orange">
+      <h2>Download Dataset</h2>
+     
+     
+    </a>
+    <a class="box box-down blue">
+      <h2>Split Dataset</h2>
+     
+      
+    </a>
+    <a class="box box-down red">
+      <h2>Supervisor</h2>
+     
+      
+    </a>
+    <a class="box box-down cyan">
+      <h2>Supervisor</h2>
+     
+    </a>
+  </div>
+  </div>
+  </body>
+<script >
+ 
+</script>
+</html>
